@@ -1,2 +1,2 @@
-# Disciplina-WEB
-Nesse repositório está presente as respostas das listas da disciplina
+Desenvolvimento Web
+Um repositório para as atividades desenvolvidas durante a disciplina de Desenvolvimento para Web
