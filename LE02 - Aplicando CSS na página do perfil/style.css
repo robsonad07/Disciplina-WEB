@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    padding: 20px 25px;
+    color: rgb(15, 20, 25);
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* Navegação & Publicações */
+#menu-navegacao #menu-navegacao-lista .menu-navegacao-item a{
+    display: flex;
+    padding: 5px 10px;
+    color: rgb(15, 20, 25);
+    text-decoration: none
+}
+
+#menu-navegacao #menu-navegacao-lista .menu-navegacao-item a:hover{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: rgba(15, 25, 20, 0.1);
+}
+
+
+
+/* Estatisticas */
+
+#info-perfil .info-perfil-estatic{
+    display: flex;
+    padding: 5px 25px;
+    
+}
+
+#info-perfil .info-perfil-estatic .info-perfil-item{
+    margin-right: 10px;
+}
+
+#info-perfil .info-perfil-estatic .info-perfil-item a{
+    display: flex;
+    text-decoration: none;
+}
+
+#info-perfil .info-perfil-estatic .info-perfil-item a:hover{
+    text-decoration: underline;
+}
+
+
+#info-perfil .info-perfil-estatic .info-perfil-item a h5{
+    margin-right: 5px;
+    color: rgb(15, 20, 25);
+    font: bold;
+}
+
+#info-perfil .info-perfil-estatic .info-perfil-item p{
+    color: rgb(83,100,113);
+}
+
+/* Ações */
+
+#feed-bloco .tzeet-block .acoes{
+    display: flex;
+    padding: 5px;
+}
+
+
+#feed-bloco .tzeet-block .acoes .acoes-item a{
+    color: rgb(83,100,113);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#feed-bloco .tzeet-block .acoes .reply a:hover{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+}
+
+#feed-bloco .tzeet-block .acoes .retzeet a:hover{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+}
+
+#feed-bloco .tzeet-block .acoes .like a:hover{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
+#feed-bloco .tzeet-block .acoes .acoes-item:last-child a:hover{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+}
+
+/* restante do texto */
+
+#perfil #info-usuario h4,
+#perfil #info-usuario .descricao{
+    color: rgb(15, 20, 25);
+} 
+
+#perfil #info-usuario .nome-usuario{
+    color: rgb(83,100,113);
+}
+
+#info-perfil .info-perfil-loc-data{
+    display: flex;
+    padding: 5px 25px;
+    
+}
+
+#info-perfil .info-perfil-loc-data a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(83,100,113);
+}
+
+
+/* tzeet */
+
+#feed-bloco .tzeet-block{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+#feed-bloco .tzeet-block:hover{
+    background-color: rgba(0, 0, 0, 0.03);    
+}
+
+#feed-bloco .tzeet-block .tzeet-usuario-info{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+#feed-bloco .tzeet-block .tzeet-usuario-info p{
+    color: rgb(15, 20, 25);
+}
+#feed-bloco .tzeet-block .tzeet-usuario-info a{
+    color: rgb(83, 100, 113); 
+    text-decoration: none;
+}
+
+#feed-bloco .tzeet-block .tzeet-usuario-info span{
+    color: rgb(83, 100, 113);
+}
+
+#feed-bloco .tzeet-block .tzeet-conteudo{
+    padding: 5px;
+    color: rgb(15, 20, 25);
+}
+
+#feed-bloco #feed-opcoes{
+    display: flex;
+}
+
+
+#feed-bloco #feed-opcoes a{
+    text-decoration: none;
+    color: rgb(15, 20, 25);
+    padding: 5px 5px;
+}
+
+/* imagem */
+img {
+    border-radius: 50%;
+  }
+
+
