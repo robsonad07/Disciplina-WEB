@@ -12,7 +12,7 @@ body {
     align-items: center;
     padding: 20px 25px;
     color: rgb(15, 20, 25);
-    background-color: rgba(255, 255, 255, 1.0);
+    background-color: whitesmoke;
 }
 
 ol, ul {
@@ -100,59 +100,53 @@ ol, ul {
 }
 #feed-bloco .tzeet-block .acoes .acoes-item p{
     margin: 0;
-    padding: 5px 5px;
+    padding: 0;
+
 }
 
-
 #feed-bloco .tzeet-block .acoes .acoes-item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgb(83,100,113);
     text-decoration: none;
     padding: 5px 10px;
 }
 
-#feed-bloco .tzeet-block .acoes .reply:hover{
-    color: rgba(29, 155, 240, 1);
+#feed-bloco .tzeet-block .acoes .acoes-item .conf-icon{
+    display: flex;
+    padding: 5px 10px;
 }
 
 #feed-bloco .tzeet-block .acoes .reply a:hover{
-    border-radius: 20px;
-    border: 1px solid transparent;
-    background: rgba(29, 155, 240, 0.1);
     color: rgba(29, 155, 240, 1);
 }
 
-#feed-bloco .tzeet-block .acoes .reply p:hover{
-    color: rgb(83,100,113);
-}
-
-#feed-bloco .tzeet-block .acoes .retzeet:hover{
-    color: rgba(0, 186, 124, 1);
+#feed-bloco .tzeet-block .acoes .reply .conf-icon:hover{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgba(29, 155, 240, 0.1);
 }
 
 #feed-bloco .tzeet-block .acoes .retzeet a:hover{
-    border-radius: 20px;
-    border: 1px solid transparent;
-    background: rgba(0, 186, 124, 0.1);
     color: rgba(0, 186, 124, 1);
 }
 
-#feed-bloco .tzeet-block .acoes .retzeet p:hover{
-    color: rgb(83,100,113);
+#feed-bloco .tzeet-block .acoes .retzeet .conf-icon:hover{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: rgba(0, 186, 124, 0.1);
 }
 
-#feed-bloco .tzeet-block .acoes .like:hover{
+
+#feed-bloco .tzeet-block .acoes .like a:hover{
     color: rgba(249, 24, 128, 1);
 }
 
-#feed-bloco .tzeet-block .acoes .like a:hover{
+#feed-bloco .tzeet-block .acoes .like .conf-icon:hover{
     border-radius: 20px;
     border: 1px solid transparent;
     background: rgba(249, 24, 128, 0.1);
-    color: rgba(249, 24, 128, 1);
-}
-
-#feed-bloco .tzeet-block .acoes .like p:hover{
-    color: rgb(83,100,113);
 }
 
 #feed-bloco .tzeet-block .acoes .acoes-item:last-child a:hover{
@@ -203,19 +197,23 @@ ol, ul {
 #feed-bloco .tzeet-block .tzeet-usuario-info{
     display: flex;
     padding: 5px;
-    justify-content: space-evenly;
+    justify-content: star;
 }
 
 #feed-bloco .tzeet-block .tzeet-usuario-info p{
     color: rgb(15, 20, 25);
+    margin-right: 5px;
+    margin-left: 5px;
 }
 #feed-bloco .tzeet-block .tzeet-usuario-info a{
     color: rgb(83, 100, 113); 
     text-decoration: none;
+    margin-right: 5px;
 }
 
 #feed-bloco .tzeet-block .tzeet-usuario-info span{
     color: rgb(83, 100, 113);
+    margin-right: 5px;
 }
 
 #feed-bloco .tzeet-block .tzeet-conteudo{
