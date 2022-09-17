@@ -280,3 +280,34 @@ ol, ul {
     justify-content: space-evenly;
 }
 
+@media only screen and (max-width : 992px){
+    #menu-navegacao-lista .menu-navegacao-item p{
+        display: none;
+    }
+    #menu-navegacao .d-grid button{
+        display: none;
+    }
+
+    #menu-navegacao #menu-navegacao-lista .menu-navegacao-item a{
+        padding: 5px 5px;
+        margin: 0;
+    }
+
+    #menu-navegacao #menu-navegacao-lista .menu-navegacao-item a:hover{
+        border-radius: 0;
+        border: 1px solid transparent;
+        background-color: transparent;
+    }
+
+    #menu-navegacao #menu-navegacao-lista .menu-navegacao-item a svg:hover{
+        border-radius: 5px;
+        border: 1px solid transparent;
+        background-color: rgba(15, 25, 20, 0.1);
+    }
+
+}
+@media only screen and (min-width : 992px){
+    #menu-navegacao .bnt-oculto{
+        display: none;
+    }
+}
