@@ -370,3 +370,14 @@ ol, ul {
 #separador-modal svg{
     margin-right: 10px;
 }
+
+.adicionar-tzeet-icon{
+    align-items: center;
+    padding-left: 10px;
+}
+
+.adicionar-tzeet-icon:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
