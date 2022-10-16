@@ -1,0 +1,58 @@
+#pagina{
+    background-color: rgb(195, 195, 195);
+    height: 100vh;
+    top: 100%;
+    left: 100%;
+}
+
+#formulario-login{
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: auto;
+    background-color: whitesmoke;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#input-email h5{
+    margin: 10px;
+}
+
+#input-email input{
+    width: 90%;
+}
+
+#input-senha input{
+    width: 90%;
+}
+
+#input-senha a{
+    margin: 10px;
+}
+
+#formulario-login img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 10px;
+}
+
+#botao-entrar{
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#cadastrar-conta{
+    margin: 10px;
+}
+
+.msn-email-invalido{
+    margin-left: 15px;
+    color: red;
+}
+

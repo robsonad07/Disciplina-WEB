@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./cadastro.js"></script>
+        <link rel="stylesheet" type="text/css" href="./cadastro.css" media="screen" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <title>Login</title>
+    </head>
+
+    <body>    
+        <div id="pagina">
+            <main>
+                <div id="formulario-cadastro">
+                    <div class="form-header border-bottom">
+                        <a href="./login.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                        </a>
+                        <h4>
+                            Criar conta
+                        </h4> 
+                    </div>
+                    <form action="">
+                        <div class="mb-3" id="input-nome">
+                            <input type="nome" placeholder="Nome:" id="inputnome" class="form-control d-grid gap-2 col-6 mx-auto" aria-describedby="nomeHelpBlock">
+                            <div id="msnome" class="msn-invalido"></div>
+                        </div>
+                        <div class="mb-3" id="input-email">
+                            <input type="email" placeholder="Email:" id="inputemail" class="form-control d-grid gap-2 col-6 mx-auto" aria-describedby="emailHelpBlock">
+                            <div id="msgemail" class="msn-invalido"></div>
+                        </div>
+                        <div class="mb-3" id="input-senha">
+                            <input type="password" placeholder="Senha:" id="inputsenha" class="form-control d-grid gap-2 col-6 mx-auto" aria-describedby="passwordHelpBlock">
+                            <div id="mssenha" class="msn-invalido"></div>
+                        </div>
+                        <div class="mb-3" id="input-confimacao-senha">
+                            <input type="password" placeholder=" Confirme a senha:" id="inputsenhaconfimacao" class="form-control d-grid gap-2 col-6 mx-auto" aria-describedby="passwordHelpBlock">
+                            <div id="mssenha2" class="msn-invalido"></div>
+                        </div>
+    
+                        <div class="mb-3" id="input-data">
+                            <div id="data-informacoes">
+                                <h6>Data de nascimento</h6>
+                                <span>Isso não será exibito publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</span>
+                            </div>
+                            
+                    
+                            <div id="seleciona-container">
+                                <div id="seleciona-elemento-mes">
+                                    <select id="mes" class="form-select" aria-label="Default select example">
+                                        <option selected>Mês</option>
+                                    </select>
+                                    <div id="mesHelp" class="msn-invalido"></div>
+                                </div>
+                    
+                                <div id="seleciona-elemento-dia">
+                                    <select id="dia" class="form-select" aria-label="Default select example">
+                                        <option selected>Dia</option>
+                                    </select>
+                                    <div id="diaHelp" class="msn-invalido"></div>
+                                </div>
+                    
+                                <div id="seleciona-elemento-ano">
+                                    <select id="ano" class="form-select" aria-label="Default select example">
+                                        <option selected>Ano</option>
+                                    </select>
+                                    <div id="anoHelp" class="msn-invalido"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3 formulario-check">
+                            <input type="checkbox" class="formulario-check-input" id="checkbox">
+                            <label class="formulario-check-label" for="checkbox">Receba emails sobre sua atividade no Tzeeter e recomendações.</label>
+                        </div>
+                        <div  class="border-bottom">
+                            <div id="termo-uso">
+                                <span>
+                                    Você concorda com nossos <a href="">Termos</a>, <a href="">Política de Privacidade</a> e com o uso de <a href="">Cookies</a>?
+                                </span>
+                                <div id="radio-checks">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Sim
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Não
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="btn-criar" class="d-grid gap-2 col-6 mx-auto">
+                        <button id="btn-cadastrar" class="btn btn-primary" type="button">Criar conta</button>
+                    </div>
+                    
+                </div>
+                        
+            </main>
+        </div>   
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>

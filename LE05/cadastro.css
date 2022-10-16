@@ -1,0 +1,100 @@
+#pagina{
+    background-color: rgb(195, 195, 195);
+    height: 100vh;
+    top: 100%;
+    left: 100%;
+}
+
+#formulario-cadastro{
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: auto;
+    background-color: whitesmoke;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-cadastro .form-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#formulario-cadastro .form-header a{
+    color: black;
+    margin-left: 15px;
+}
+
+#formulario-cadastro .form-header h4{
+    position: relative;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, 0%);
+}
+
+#input-nome input{
+    width: 90%;
+}
+
+#input-email input{
+    width: 90%;
+}
+
+#input-senha input{
+    width: 90%;
+}
+
+#input-confimacao-senha input{
+    width: 90%;
+}
+
+#data-informacoes{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#seleciona-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#seleciona-elemento-mes{
+    width: 40%;
+}
+
+#seleciona-elemento-dia{
+    width: 20%;
+}
+
+#seleciona-elemento-ano{
+    width: 20%;
+}
+
+#checkbox{
+    margin-left: 10px;
+}
+
+#termo-uso{
+    margin-left: 10px;
+}
+
+#radio-checks{
+    display: flex;
+}
+
+#radio-checks .form-check{
+    margin: 10px;
+}
+
+#btn-criar{
+    margin: 15px;
+    width: 90%;
+}
+
+.msn-invalido{
+    margin-left: 10px;
+    color: red;
+}
