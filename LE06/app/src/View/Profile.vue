@@ -1,5 +1,5 @@
 <script setup>
-  import ItemMenu from '../components/itemMenu.vue';
+  import ItemMenu from '../components/ItemMenu.vue';
   import Perfil from '../components/Perfil.vue';
   import Tzeet from '../components/Tzeet.vue';
   import Sugestao from '../components/sugestao.vue'
@@ -59,6 +59,21 @@
       </div>
     </div>
     <main class="col-sm-9 col-md-9 col-lg-6 border-end border-start">
+      <div id="header">
+        <h2>Profile</h2>
+        <div class="autenticacao">
+          <router-link to="/login">
+            <button type="button" class="btn btn-primary btn-sm">
+              Login
+            </button>
+          </router-link>
+          <router-link to="/registrar">
+            <button type="button" class="btn btn-primary btn-sm">
+              Registrar-se
+            </button>
+          </router-link>
+        </div> 
+      </div>
       <Perfil
       nome = "Robson Amaral"
       user = "robsonad07"
@@ -116,3 +131,24 @@
     </div>
   </div>
 </template>
+
+<style>
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header .autenticacao {
+    display: flex;
+    margin: 15px;
+  }
+
+  #header .autenticacao button {
+    margin-right: 15px;
+  }
+
+  #menu-navegacao-lista {
+    text-decoration: none 
+  }
+</style>
