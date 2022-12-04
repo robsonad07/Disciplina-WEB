@@ -1,5 +1,5 @@
 <script setup>
-  import ItemMenu from '../components/itemMenu.vue';
+  import ItemMenu from '../components/ItemMenu.vue';
   import FormTzeet from '../components/FormTzeet.vue';
   import Tzeet from '../components/Tzeet.vue';
   import Sugestao from '../components/sugestao.vue'
@@ -7,6 +7,7 @@
   import imagem2 from '../assets/person2.jpg';
   import imagem3 from '../assets/person1.jpg';
   import imagem4 from '../assets/person3.jpg';
+
 </script>
 
 <template>
@@ -49,7 +50,7 @@
       ></ItemMenu>
     </ul>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Tweet</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Tweet</button>
     </div>
         <div class="bnt-oculto">
           <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -60,7 +61,21 @@
       </div>
     </div>
     <main class="col-sm-9 col-md-9 col-lg-6 border-end border-start" id="home">
-      <h2>Home</h2>
+      <div id="header">
+        <h2>Home</h2>
+        <div class="autenticacao">
+          <router-link to="/login">
+            <button type="button" class="btn btn-primary btn-sm">
+              Login
+            </button>
+          </router-link>
+          <router-link to="/registrar">
+            <button type="button" class="btn btn-primary btn-sm">
+              Registrar-se
+            </button>
+          </router-link>
+        </div> 
+      </div>
       <FormTzeet></FormTzeet>
       <Tzeet
       :img = imagem1
@@ -82,6 +97,8 @@
       :quantShare = 50
       :curtidas = 400
       ></Tzeet>
+
+      
     </main>
     <div class="col-3 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" id="col-right">
         <form action="input">
@@ -108,6 +125,7 @@
         </div>
     </div>
   </div>
+  
 </template>
 
 <style>
@@ -118,6 +136,28 @@
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header .autenticacao {
+    display: flex;
+    margin: 15px;
+  }
+
+  #header .autenticacao button {
+    margin-right: 15px;
+  }
+
+  .modal {
+    z-index: 999;
+    top: 20%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
   }
 
   body {
@@ -158,5 +198,9 @@
   #col-right #sugestao p{
     font: bold;
     font-size: x-large;
+  }
+
+  a{
+    text-decoration: none 
   }
 </style>

@@ -21,7 +21,7 @@
         display: flex;
         padding: 5px 10px;
         color: rgb(15, 20, 25);
-        text-decoration: none
+        text-decoration: none 
     }
 
     .menu-navegacao-item a:hover{
